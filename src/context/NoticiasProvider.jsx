@@ -15,7 +15,6 @@ const NoticiasProvider = ({children}) => {
 
             const { data } = await axios(url)
             setNoticias(data.articles)
-            console.log(noticias)
         }
 
         consultarAPI()
@@ -32,9 +31,7 @@ const NoticiasProvider = ({children}) => {
             value={{
                 categoria,
                 handleChangeCategoria,
-
-                
-
+                noticias,
             }}
         >
             {children}
