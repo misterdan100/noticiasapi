@@ -14,7 +14,7 @@ const CATEGORIAS = [
 const Formulario = () => {
     const { categoria, handleChangeCategoria } = useNoticias()
     
-    console.log(categoria)
+
   return (
     <form >
         <FormControl fullWidth>
