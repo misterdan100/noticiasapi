@@ -7,6 +7,7 @@ import {
   Typography,
   Grid,
 } from "@mui/material";
+import { formatDate } from "../utils";
 
 const Noticias = ({ noticia }) => {
   const { source, description, publishedAt, title, url, urlToImage } = noticia;
@@ -58,6 +59,15 @@ const Noticias = ({ noticia }) => {
             >
                 Leer Noticia...
             </Link>
+            <Typography
+                variant="caption"
+                component={'p'}
+                sx={{
+                    marginRight: '.8rem'
+                }}
+            >
+                {formatDate(publishedAt)}
+            </Typography>
         </CardActions>
 
       </Card>

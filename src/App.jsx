@@ -22,7 +22,7 @@ function App() {
             textTransform: "uppercase"
           }}
           >
-            Buscador de Noticias
+            News Searcher
           </Typography>
         </header>
 
