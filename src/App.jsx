@@ -12,7 +12,16 @@ function App() {
     <NoticiasProvider>
       <Container>
         <header>
-          <Typography align="center" marginY={5} component="h1" variant="h3">
+          <Typography 
+          align="center" 
+          marginY={5} 
+          omponent="h1" 
+          variant="h3"
+          sx={{
+            fontWeight: 'bold',
+            textTransform: "uppercase"
+          }}
+          >
             Buscador de Noticias
           </Typography>
         </header>
